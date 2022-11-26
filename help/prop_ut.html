@@ -1,0 +1,187 @@
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+   <meta name="Author" content="Molnár András">
+
+
+<title>
+Utasító Súgó - Turistakártya
+</title>
+
+
+</head>
+
+<body bgcolor="#00FFFF" link="#FFFF00" vlink="#FFFF00" alink="#FFFF00" text="#FFFFFF">
+<center>
+<table bgcolor="#005700" width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr VAlign="middle">
+<td width=170 align="center">
+
+
+<!-- INDEX -->
+<a href="../index.html">
+<!-- /INDEX -->
+
+<h3>Turistakártya</h3>
+<img SRC="../docimg/szr.gif" alt="Szélrózsa" border=0><br>
+</a>
+</td>
+<td align="center">
+<a href="../about/index.html"><img src="../docimg/linkarrow_k.gif" border=0 align="bottom" alt="->">Bevezető</a> | 
+<a href="../szabaly/index.html"><img src="../docimg/linkarrow_p.gif" border=0 align="bottom" alt="->">Szabályok</a> | 
+<a href="../help/index.html"><img src="../docimg/linkarrow_z.gif" border=0 align="bottom" alt="->">Súgó</a> |
+<a href="../paklik/index.html"><img src="../docimg/linkarrow_s.gif" border=0 align="bottom" alt="->">Paklik</a>
+<br>
+	
+<!-- BANNER -->
+<img src="../docimg/banner/prop_ut.jpg" border=0>
+<!-- /BANNER -->
+
+
+<h2>
+
+
+<!-- TITLE -->
+<img src="../docimg/propimg/ut.gif" alt="Utasító" align="absmiddle" border=0>(Utasító: kimaradás / kötelező húzás kezdeményezése)
+<!-- /TITLE -->
+
+
+</h2>
+</td>
+<td width="5%">&nbsp;</td>
+</tr>
+</table>
+</center>
+
+<table border=0><tr><td>
+<img src="../docimg/jelsor.gif" border=0>
+</td></tr></table>
+
+<table bgcolor="#B0006F" width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr valign="top" width="5%"><td align="center">
+
+
+<!-- LEFTSIDE -->
+&nbsp;
+<!-- /LEFTSIDE -->
+
+
+</td><td>
+
+
+<!-- CONTENT -->
+&nbsp;
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+<img src="../docimg/propimg/ut.gif" alt="Utasító" align="absmiddle" border=0> (jelzés-)tulajdonságú lap
+lerakásakor a következő játékos kimarad a körből és (a lerakott lap konkrét jelzésétől függően) húznia kell vagy az utasító lapot lerakó
+játékos eldobhat lapo(ka)t a pakli tetejére. Ezzel a tulajdonsággal csak az <a href="j_ut.html">utasító jelzések</a> rendelkeznek.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A köből való kimaradás nem automatikus, hanem a játékos sorra kerül, de csak speciális,
+<a href="prop_uthalmozo.html"><img src="../docimg/propimg/uthalmozo.gif" alt="UtasításHalmozó" align="absmiddle" border=0></a> tulajdonságú lapot tehet, amivel a kimaradás / kötelező húzás érvényben marad, de már
+az őutána következő játékosra vonatkozik. Ha a lerakott lap szintén <img src="../docimg/propimg/ut.gif" alt="Utasító" align="absmiddle" border=0>-s, akkor összeadódik a lapok jelentése (pl. a felhúzandó lapmennyiség; l. lejjebb). Ez így mehet addig, amíg a soron következőnek
+van <a href="prop_uthalmozo.html"><img src="../docimg/propimg/uthalmozo.gif" alt="UtasításHalmozó" align="absmiddle" border=0></a>-lapja; s ha már nincs, kötelezően passzolnia kell. Ez a folyamat a halmozás.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+Ha valaki utolsó lapként
+rak le ilyen jelzésű lapot, még meg kell várni, hogy a többiek tudnak-e
+halmozni. Ha ugyanis a halmozás körbeér, a halmozott mennyiséget fel kell
+húznia (ha van), s így “visszahívhatják” a játékba.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+Négyféle utasítás van ('húzási' módok, de valójában ezek küzül csak kettő húzás). Mindegyikhez tartozik egy komplex egység is, amely []-be van írva:
+<ul>
+<li><img src="../cardimg/smallimg/29.gif" align="absmiddle" alt="Húzó"> - húzás [1]: a halmozni már nem tudó, következő játékos húz a pakliból</li>
+<li><img src="../cardimg/smallimg/16.gif" align="absmiddle" alt="Elhúzó"> - elhúzás [i]: a halmozni már nem tudó, következő játékos húz egy lapot az utolsó halmozótól</li>
+<li><img src="../cardimg/smallimg/19.gif" align="absmiddle" alt="Pipa"> - eldobás [-1]: az utolsó halmozó eldob egy tetszőleges, kezében lévő lapot a pakli tetejére</li>
+<li><img src="../cardimg/smallimg/32.gif" align="absmiddle" alt="Átadó"> - átadás [-i]: az utolsó halmozó átad a hamozni már nem tudó, következő játékosnak egy tetszőleges, kezében lévő lapot</li>
+</ul>
+[Itt i a -1 négyzetgyöke, azaz i * i = (-i) * (-i) = -1; ennek az <a href="j_utszorzo.html">utasításszorzó jelzéseknél</a> van jelentősége.]
+<p>
+Halmazatba beszámító utasító jelzésű lapok mindegyike a négy közül valamelyik típusú utasítást növeli eggyel vagy többel (2, 4).
+Halmozás közben számolódik, hogy az egyes húzási módokhoz milyen mennyiség tartozik (pl. hány kártyát kellene húzni a pakliból, hányat az utolsó halmozótól) és
+egy újabb <img src="../docimg/propimg/ut.gif" alt="Utasító" align="absmiddle" border=0> tulajdonságú kártya lerakásakor annak halmazati értéke ehhez hozzáadódik.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+Egy utasító kártya halmazati értéke egyszerűen a jelzéséhez tartozó halmazati típus egységének a - szintén a jelzéshez tartozó - mennyiséggel (1, 2 vagy 4) vett szorzata.
+Ez az érték adódik hozzá az addigi halmazathoz, külön a valós részek, külön a képzetes részek (az i-s tagok) adódnak össze.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+Látható, hogy a húzás-eldobás, illetve az elhúzás-átadás egymás ellentétei, mert a hozzájuk tartozó egység ugyanaz, csak
+ellenkező előjellel. Így a négy mód nem függetlenül számolandó, csak a két párhoz tartozó mennyiség független egymástól. A párok tagjai egymást gyengítik és kölcsönösen kizárják egymást: a halmozás végén ha a valós rész
+pozitív, akkor a húzás érvényesül; ha negatív, akkor az eldobás. Ugyanígy, a képzetes rész pozitív előjele esetén elhúzás történik, negatív esetben átadás.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+Ugyanez egy koordináta-rendszerrel is ábrázolható. Középen van a 0, az egyszerű kimaradás. A vízszintes, valós résznek megfelelő tengely
+pozitív irányába (jobbra) nő a pakliból húzás mennyisége, negatív irányban (jobbra) pedig az előző játékos által eldobandó lapok száma.
+Hasonlóan a függőleges, képzetes tengely mentén pozitív irányban (felfelé) nő az előző játékostól elhúzandó lapszám, negatív irányban (lefelé)
+az őáltala átadandó lapok száma.<br>
+<img src="../docimg/utcoord11.gif"><br>
+Minden egyes halmazat egy rácspontnak felel meg a koordinátarendszerben. Halmozás kezdetekor
+az utasítási szám (halmazat) onnan indul, ahová a lerakott lap jelzése be van jelölve, s később
+ehhez képest kell nézni a további halmozást (hozzáadni a következő lap utasítási számát). Szemléletesen:
+<ul>
+<li>Egy húzólap lerakásakor a halmazatot megadó pont vízszintesen jobbra mozdul annyival, amennyi a lap jelzéséhez tartozó mennyiség (<a href="j_29.html"><img src="../cardimg/smallimg/29.gif" align="absmiddle" border=0 alt="Húzó"></a> esetén 1-gyel, <a href="j_14.html"><img src="../cardimg/smallimg/14.gif" align="absmiddle" border=0 alt="KettesHúzó"></a>-nál 2-vel, <a href="j_15.html"><img src="../cardimg/smallimg/15.gif" align="absmiddle" border=0 alt="NégyesHúzó"></a>-nál 4-gyel);</li>
+<li>Egy elhúzólap lerakásakor ugyanígy függőlegesen felfelé mozdul;
+<li>Egy pipa (elhúzólap) lerakásakor vízszintesen balra;
+<li>Egy átadó lerakásakor pedig függőlegesen lefelé.
+</ul>
+A halmozás végén a pont helye adja meg, hogy mit kell tenni. Pl. az ábrán x-szel jelölt
+végeredmény (1 + i) esetén a koordinátákat leolvasva egy lapot kell húzni a pakliból és
+egyet az utolsó halmozótól.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A kimaradás ill. kötelező húzást hatástalanítja a legutóbb lerakott
+lapra színben illeszkedő &nbsp;<a href="j_10.html"><img SRC="../cardimg/smallimg/10.gif" alt="Ász" border=0 align="absmiddle"></a>.
+<br>&nbsp;
+<!-- /CONTENT -->
+
+
+</td><td width="5%">
+
+<!-- RIGHTSIDE -->
+&nbsp;
+<!-- /RIGHTSIDE -->
+
+</td></tr></table>
+
+<table border=0><tr><td>
+<img src="../docimg/jelsor.gif" border=0>
+</td></tr></table>
+
+
+<table width="100%" bgcolor="#005700" cellspacing=0 cellpadding=0 border=0>
+<tr VAlign="bottom" align="center">
+<td width="33%">
+
+
+<!-- FOOTER -->
+&nbsp;<table bgcolor="#23DC31" width="60%"><tr><td align="center">
+<a href="prop_index.html"><img src="../docimg/back.jpg" alt="Vissza" border=0><br>
+<font color="#FFFFFF">Kártyatulajdonságok</font></a>
+</tr></td></table>&nbsp;
+<!-- /FOOTER -->
+
+
+</td>
+<td width="33%">
+&nbsp;<table><tr><td align="center">
+<a href="../index.html"><img src="../docimg/szr.gif" border=0 alt="Szélrózsa" height=64><br>
+Turistakártya</a>
+</tr></td></table>&nbsp;
+</td>
+
+<td width="33%">
+&nbsp;<table><tr><td align="center">
+<a href="#top"><img src="../docimg/top.jpg" alt="Föl" border=0><br>
+Lap teteje</a>
+</tr></td></table>&nbsp;
+</td>
+</tr>
+</table>
+
+<p align=right><a href="mailto:mola@inf.elte.hu"><img src="../docimg/ma2002.gif" alt="Moln&aacute;r Andr&aacute;s, 2002." border=0></a></p>
+
+</body>
+</html>

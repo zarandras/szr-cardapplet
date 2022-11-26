@@ -1,0 +1,743 @@
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+   <meta name="Author" content="Molnár András">
+
+
+<title>
+JátékSúgó - Turistakártya
+</title>
+
+
+</head>
+
+<body bgcolor="#00FFFF" link="#FFFF00" vlink="#FFFF00" alink="#FFFF00" text="#FFFFFF">
+
+<MAP NAME="applet.map">
+<AREA SHAPE="RECT" HREF="#infobox" COORDS="12,3, 340,27" alt="InfóBox">
+<AREA SHAPE="RECT" HREF="#gametable" COORDS="7,50, 157,192" alt="JátékTér">
+<AREA SHAPE="RECT" HREF="#playerlist" COORDS="158,30, 340,192" alt="Játékoslista">
+<AREA SHAPE="RECT" HREF="#cardsinhand" COORDS="8,194, 340,286" alt="Saját lapok">
+<AREA SHAPE="RECT" HREF="#controlpanels" COORDS="349,3, 544,146" alt="Játékos- és Játékpanel">
+<AREA SHAPE="RECT" HREF="#chatter" COORDS="349,147, 544,297" alt="Csevegő">
+</MAP>
+
+<center>
+<table bgcolor="#005700" width="100%" cellspacing=0 cellpadding=0 border=0>
+ <tr VAlign="middle">
+  <td width=170 align="center">
+    <a href="../index.html">
+       <h3>Turistakártya</h3>
+       <img SRC="../docimg/szr.gif" alt="Szélrózsa" border=0><br>
+    </a>
+  </td>
+  <td align="center">
+     <a href="../about/index.html"><img src="../docimg/linkarrow_k.gif" border=0 align="bottom" alt="->">Bevezető</a> | 
+     <a href="../szabaly/index.html"><img src="../docimg/linkarrow_p.gif" border=0 align="bottom" alt="->">Szabályok</a> | 
+     <a href="../help/index.html"><img src="../docimg/linkarrow_z.gif" border=0 align="bottom" alt="->">Súgó</a> |
+     <a href="../paklik/index.html"><img src="../docimg/linkarrow_s.gif" border=0 align="bottom" alt="->">Paklik</a>
+     <br>
+	
+	
+<!-- BANNER -->
+<img src="../docimg/banner/applet_help.jpg" border=0>
+<!-- /BANNER -->
+
+
+<h2>
+
+
+<!-- TITLE -->
+JátékSúgó: A Kártyaasztal
+<!-- /TITLE -->
+
+
+</h2>
+  </td>
+  <td width="5%">&nbsp;</td>
+ </tr>
+</table>
+</center>
+
+<table border=0><tr><td>
+<img src="../docimg/jelsor.gif" border=0>
+</td></tr></table>
+
+<center>
+<table border=0><tr><td bgcolor="#00FFFF" align="center">
+<img src="../docimg/applet.gif" border=0 usemap="#applet.map" alt="[Kártyaasztal]">
+</td></tr></table>
+</center>
+
+<!-- --------- CONTROLPANELS -------------- -->
+<table border=0><tr><td>
+
+
+<!-- ANCHOR -->
+<a name="controlpanels">
+<!-- /ANCHOR -->
+
+
+<img src="../docimg/jelsor.gif" border=0></a>
+</td></tr></table>
+
+<table bgcolor="#005700" width="100%" cellspacing=0 cellpadding=0 border=0>
+  <td align="center">
+      &nbsp;
+      <h3>
+
+
+<!-- TITLE_SUB -->
+Játékos- és Játékpanel
+<!-- /TITLE_SUB -->
+
+      
+      </h3>
+  </td>
+  <td width="10%">
+      <a href="#top"><img src="../docimg/top.jpg" alt="Föl" border=0><br>
+      Lap teteje</a>
+  </td>
+ </tr>
+</table>
+
+&nbsp;
+
+<table bgcolor="#B0006F" width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr valign="top" width="5%"><td align="center">
+
+
+<!-- LEFTSIDE_SUB -->
+&nbsp;
+<!-- /LEFTSIDE_SUB -->
+
+
+</td><td>
+
+
+<!-- CONTENT_SUB -->
+&nbsp;
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A jobb felső sarokban lévő narancssárga Játékpanelen kell beírni
+egy tetszőleges játékosnevet, a saját email-címet és a hozzá tartozó
+jelszót. A jelszó kiküldhető az e-mail címre a [Jelszó megküldése]
+gombbal.<br>
+
+<!-- ~PW TEMPORARY -->
+<i><b>Még nem működik a [Jelszó megküldése] funkció!</b></i>
+<!-- /PW TEMPORARY -->
+
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A Gyakorlóasztalon nincs jelszókezelés, a Játékpanelen ajelszó mező és a
+[Jelszó megküldése] gomb helyén az [ÚJ ABLAK] gomb található.
+Ezzel bármikor nyithatunk új ablakot (VCardApplet-et), s a játék
+szimulációjában az általunk nyitott ablakok felelnek meg a különböző
+játékosok Játékasztal-nézeteinek. A Gyakorlóasztal használatának első
+lépése mindig az [ÚJ ABLAK] megnyomása, mert ezzel indul el a Virtuális
+SzélrózsaSzerver a böngészőben.
+<hr>
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A jobb oldal közepén lévő kék Játékpanelen láthatók a meghirdetett játékok. Itt adhatjuk meg,
+hogy mely játékhoz szeretnénk csatlakozni vagy milyen új játékot
+szeretnénk meghirdetni.
+
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A meghirdetett játékok listájában kattinva egy elemre
+(vagy beírva annak nevét a 'Játéknév' mezőbe) a jobb szélen megjelennek annak
+jellemzői. A jellemzőket mi magunk állíthatjuk be, ha új játékot akarunk hirdetni.
+Ehhez egy még nem létező játéknevet kell beírni a 'Játéknév' mezőbe.
+<ul>
+<li>Pakli: Ez azt határozza meg, hogy melyik kártyacsomaggal folyik a játék.
+A paklik különböző kategóriákba vannak sorolva, s e szerint vannak csoportosítva
+a listában. A kategóriák nevei &lt;- Kategória -&gt; formájúak, ezek nem választhatók.
+Minden pakli után zárójelben ott van, hogy hány kártyalapból áll (ha játék közben elfogy,
+akkor a SzélózsaSzerver egy másik, ugyanolyan típusú új paklit hoz létre). Ha a kártyaszám
+helyett * szerepel, akkor valójában nem pakliról van szó, hanem <a href="../paklik/random.html">'_R kártyagenerátor'</a>-ról,
+természetesen ezekkel is játszhatunk. A paklikról bőséges leírás található a <a href="../paklik/index.html">Paklik</a> részben.</li>
+<li>Osztadó lapok: Ez a játék elején játékosonként kiosztandó lapokat jelenti, ennyi induló
+kártyája van mindenkinek.</li>
+</ul>
+A [&lt;&lt;Játékoslista] gombra kattintva megjelenik a játékban résztvevők adatai, állapota a
+<a href="#playerlist">Játékoslistá</a>ban. Ez csak egyszeri lekérdezés, automatikusan csak akkor
+frissül a <a href="#playerlist">Játékoslista</a>, ha játékban vagyunk.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+Új játék meghirdetéséhez be kell írni egy még nem létező játéknevet (szóköz és kerek zárójel
+nem lehet benne), ki kell választani a paklit és az osztandó lapok számát, végül meg kell
+nyomni az [Újat hirdet] gombot.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+Játékhoz való csatlakozáshoz elég beírni egy már létező játéknevet vagy kattintani a 
+megfelelő meghirdetett játéknévre a listában, s meg kell nyomni a [Csatlakozik] gombot.
+A kerek zárójelben lévő játéknevek már elkezdett játékokat jelentenek, ezekhez már nem lehet
+csatlakozni.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+Játék közben bármikor kiszállhatunk a játékból a [Kiszáll] gombra való kattintással.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A Játék- és a Játékospanel tartalma csak akkor módosítható, ha
+nem vagyunk játékban.
+<br>&nbsp;
+<!-- /CONTENT_SUB -->
+
+
+</td><td width="20%">
+
+<!-- RIGHTSIDE_SUB -->
+&nbsp;<br>
+&nbsp;<img src="../docimg/controlpanels.gif">
+&nbsp;<br>
+&nbsp;
+<!-- /RIGHTSIDE_SUB -->
+
+</td></tr></table>
+
+<!-- --------- CHATTER -------------- -->
+<table border=0><tr><td>
+
+
+<!-- ANCHOR -->
+<a name="chatter">
+<!-- /ANCHOR -->
+
+
+<img src="../docimg/jelsor.gif" border=0></a>
+</td></tr></table>
+
+<table bgcolor="#005700" width="100%" cellspacing=0 cellpadding=0 border=0>
+  <td align="center">
+      &nbsp;
+      <h3>
+
+
+<!-- TITLE_SUB -->
+Csevegő
+<!-- /TITLE_SUB -->
+
+      
+      </h3>
+  </td>
+  <td width="10%">
+      <a href="#top"><img src="../docimg/top.jpg" alt="Föl" border=0><br>
+      Lap teteje</a>
+  </td>
+ </tr>
+</table>
+
+&nbsp;
+
+<table bgcolor="#B0006F" width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr valign="top" width="5%"><td align="center">
+
+
+<!-- LEFTSIDE_SUB -->
+&nbsp;
+<!-- /LEFTSIDE_SUB -->
+
+
+</td><td>
+
+
+<!-- CONTENT_SUB -->
+&nbsp;
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A jobb alsó sarokban található a (konzolra emlékeztető) fekete színű Csevegő.
+Ha játékban vagyunk (csatlakztunk vagy mi hiordettük meg), akkor cseveghetünk
+a többi játékossal: beírjuk a mondandónkat az 'Üzenet' mezőbe és megnyomjuk
+a Mond gombot. Üzenetünk - csakúgy mint a többieké - nevünkkel és jelenlegi
+<a href="#playerlist">arckifejezésünkkel</a> együtt jelenik meg a Csevegő mezőjében.
+
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+Ha játékhoz csatlakozunk a megjelenő [...] azt jelzi, hogy nem elejétől fogva követjük
+az eseményeket.
+
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A név (és arckifejezés) nélküli üzenetek a SzélrózsaSzerver rendszerüzenetei. Ilyenek
+a játékhoz csatlakozás, kiszállás, beszúrás, jelzéslap cseréje, valakinek már csak
+egy lapja van, stb.
+
+<br>&nbsp;
+<!-- /CONTENT_SUB -->
+
+
+</td><td width="20%">
+
+<!-- RIGHTSIDE_SUB -->
+&nbsp;<br>
+&nbsp;<img src="../docimg/chatter.gif">
+&nbsp;<br>
+&nbsp;
+<!-- /RIGHTSIDE_SUB -->
+
+</td></tr></table>
+
+<!-- --------- PLAYERLIST -------------- -->
+<table border=0><tr><td>
+
+
+<!-- ANCHOR -->
+<a name="playerlist">
+<!-- /ANCHOR -->
+
+
+<img src="../docimg/jelsor.gif" border=0></a>
+</td></tr></table>
+
+<table bgcolor="#005700" width="100%" cellspacing=0 cellpadding=0 border=0>
+  <td align="center">
+      &nbsp;
+      <h3>
+
+
+<!-- TITLE_SUB -->
+Játékoslista, Játékirány, Arckifejezés
+<!-- /TITLE_SUB -->
+
+      
+      </h3>
+  </td>
+  <td width="10%">
+      <a href="#top"><img src="../docimg/top.jpg" alt="Föl" border=0><br>
+      Lap teteje</a>
+  </td>
+ </tr>
+</table>
+
+&nbsp;
+
+<table bgcolor="#B0006F" width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr valign="top" width="5%"><td align="center">
+
+
+<!-- LEFTSIDE_SUB -->
+&nbsp;
+<!-- /LEFTSIDE_SUB -->
+
+
+</td><td>
+
+
+<!-- CONTENT_SUB -->
+&nbsp;
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+Ha csatlakozunk egy játékhoz (vagy meghirdetünk egyet), akkor a középen lévő Játékoslistában megjelennek
+a játékosok nevükkel, e-mail címükkel, arckifejezésükkel és azzal, hogy hány lapjuk van.
+Ez automatikusan az események hatására változik a játék közben.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A listában kijelölt játékos van éppen soron. Ezt jelzi még a &gt; szimbólum
+is, sorának elején.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+Ha éppen nem vagyunk játékban, a <a href="#controlpanels">Játékpanel</a> [&lt;&lt;Játékoslista] gombjával 
+pillanatfelvételt kaphatunk bármely játékról, akár már elkezdődött, akár nem. A játékosok
+adatai ide, a Játékoslistába kerülnek (ilyenkor viszont nem frissül automatikusan a lista).
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A lista alatt látszik a játék iránya. Az aktuális játékosnak a listában ebben az irányban lévő szomszédja
+lesz a soron következő játékos. Az irány játék közben változhat.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+Az 'Arcod' mezőbe egy smiley kerülhet, amely 'lelkiállapotunkat' tükrözi. Ezt a játék
+során bármikor változtathatjuk, s a többiek rögtön látják a változást a Játékoslistában.
+Ha a <a href="#chatter">Csevegő</a>be üzenetet küldünk, akkor a pillanatnyi arckifejezésünk
+is megjelenik az üzenet sorában.
+<br>&nbsp;
+<!-- /CONTENT_SUB -->
+
+
+</td><td width="20%">
+
+<!-- RIGHTSIDE_SUB -->
+&nbsp;<br>
+&nbsp;<img src="../docimg/playerlist.gif">
+&nbsp;<br>
+&nbsp;
+<!-- /RIGHTSIDE_SUB -->
+
+</td></tr></table>
+
+<!-- --------- INFOBOX -------------- -->
+<table border=0><tr><td>
+
+
+<!-- ANCHOR -->
+<a name="infobox">
+<!-- /ANCHOR -->
+
+
+<img src="../docimg/jelsor.gif" border=0></a>
+</td></tr></table>
+
+<table bgcolor="#005700" width="100%" cellspacing=0 cellpadding=0 border=0>
+  <td align="center">
+      &nbsp;
+      <h3>
+
+
+<!-- TITLE_SUB -->
+InfóBox
+<!-- /TITLE_SUB -->
+
+      
+      </h3>
+  </td>
+  <td width="10%">
+      <a href="#top"><img src="../docimg/top.jpg" alt="Föl" border=0><br>
+      Lap teteje</a>
+  </td>
+ </tr>
+</table>
+
+&nbsp;
+
+<table bgcolor="#B0006F" width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr valign="top" width="5%"><td align="center">
+
+
+<!-- LEFTSIDE_SUB -->
+&nbsp;
+<!-- /LEFTSIDE_SUB -->
+
+
+</td><td>
+
+
+<!-- CONTENT_SUB -->
+&nbsp;<br>
+&nbsp;<img src="../docimg/infobox_active.gif" alt="Aktív InfóBox"><br>
+&nbsp;<img src="../docimg/infobox_inactive.gif" alt="Inaktív InfóBox"><br>
+&nbsp;<img src="../docimg/infobox_white.gif" alt="InfóBox"><br>
+&nbsp;<br>
+
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A bal felső sarkoban lévő InfóBoxban láthatjuk a ránk vonatkozó mindenkori játék- ill. Kártyaasztal-állapotot
+jellemző szöveget. Érdemes erre mindig odafigyelni, mert ebből tudhatjuk meg,
+mi a helyzet és mit lehet illetve kell tennünk.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A zöld háttérszín jelzi, hogy rajtunk a sor a játékban. Amikor ilyen hátterű
+az InfóBox, gondoljunk arra, hogy most nekünk kell cselekednünk és telik a rendelkezésre
+álló gondolkodási időnk.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+Szürke háttérszín esetén nem rajtunk a sor. Lehet ilyekor is beleszólásunk a játékba
+(<a href="prop_beszurhatosag.html">beszúrás</a>, <a href="prop_vetozhatosag.html">vétózás</a>),
+amelyre ha van esély, figyelmeztet az InfóBox. 
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+Fehér a háttérszín minden más esetben (ha játékon kívül vagyunk, vagy
+ha várnunk kell valamire játék közben).
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A Kártyaasztal a figyelmeztető üzeneteket külön ablakban kévő InfóBox-ba
+írja ki, halványpiros háttérrel. A kis ablakot az [OK]-val zárhatjuk be, de
+ha nyitva hagyjuk, az újonnan érkező üzenetek után is visszagörgethetjük a korábbiakat.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+Az InfóBox alatt van a [Játék súgó] és a [Kártya súgó] gomb. Előbbivel részletesebb
+leírást kérhetünk a helyzetünkről, utóbbit ld. a <a href="#gametable">JátékTér</a>nél.
+&nbsp;
+<br>&nbsp;
+<!-- /CONTENT_SUB -->
+
+
+</td><td width="20%">
+
+<!-- RIGHTSIDE_SUB -->
+&nbsp;
+<!-- /RIGHTSIDE_SUB -->
+
+</td></tr></table>
+
+<!-- --------- GAMETABLE -------------- -->
+<table border=0><tr><td>
+
+
+<!-- ANCHOR -->
+<a name="gametable">
+<!-- /ANCHOR -->
+
+
+<img src="../docimg/jelsor.gif" border=0></a>
+</td></tr></table>
+
+<table bgcolor="#005700" width="100%" cellspacing=0 cellpadding=0 border=0>
+  <td align="center">
+      &nbsp;
+      <h3>
+
+
+<!-- TITLE_SUB -->
+JátékTér
+<!-- /TITLE_SUB -->
+
+      
+      </h3>
+  </td>
+  <td width="10%">
+      <a href="#top"><img src="../docimg/top.jpg" alt="Föl" border=0><br>
+      Lap teteje</a>
+  </td>
+ </tr>
+</table>
+
+&nbsp;
+
+<table bgcolor="#B0006F" width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr valign="top" width="5%"><td align="left">
+
+
+<!-- LEFTSIDE_SUB -->
+&nbsp;<br>
+<img src="../docimg/gametable1.gif"><br>
+<img src="../docimg/szinkerolista.gif">
+&nbsp;<br>
+&nbsp;
+<!-- /LEFTSIDE_SUB -->
+
+
+</td><td>
+
+
+<!-- CONTENT_SUB -->
+&nbsp;
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A Kártyaasztal bal oldalán középen lévő JátékTér a Kártyaasztal leglényegesebb eleme, itt zajlik
+ugyanis valójában a játék.
+<br>
+<h4>Pakli és jelzéslap</h4>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A JátékTér bal oldalán láthajuk a paklit és keresztben félig alatta a jelzéslapot.
+<ul><li>A jelzéslap egy, a játék elején
+az osztáskor kihúzott kártya, mely arra jó, hogy játék közben cserélgethessük (<a href="j_17.html"><img src="../cardimg/smallimg/17.gif" alt="Variáló" border=0 align="absmiddle"></a> jelzésű lappal például), illetve 
+ennek a mindenkori jelzése határozza meg, hogy a <a href="j_25.html"><img src="../cardimg/smallimg/25.gif" alt="Jelzéslap-kérdőjel" border=0 align="absmiddle"></a> metajelzésű lapok milyen jelzésűnek számítanak; a <a href="c_r.html"><img src="../cardimg/smallimg/r.gif" alt="FöldSzín" border=0 align="absmiddle"></a> metaszínű kártyák pedig a jelzéslap színéhez hasonulnak lerakásukkor.
+</li></ul>
+A jelzéslap mellett balra annak piktogramja látható, erre való kattintással a megjelenő menüből
+kérhetünk a jelzéslapról SzínSúgót illetve JelzésSúgót.
+<br>
+<h4>Aktuális szín és jelzés, lerakott lapok</h4>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A JátékTér jobb oldalán van a lerakott lapok halma (paklija), az utoljára lerakott
+lap az aktuális, ennek színe és jelzése határozza meg, hogy milyen kártyát lehet
+legközelebb lerakni (alaphelyzetben színben vagy jelzésben illeszkedőt, további részletek
+a <a href="card.html">KártyaSúgó</a>ban). Pontosabban szólva, nem magának a kártyának a színe és
+jelzése lényeges, hanem, hogy mivé vált lerakásakor. Ha ugyanis a kártya metaszínű v. -jelzésű,
+akkor lerakásakor határozódott meg, ideiglenesen a színe vagy a jelzése (hasonult valamihez). Hogy
+mi lett, azt az aktuális szín és jelzés piktogramja mutatja a kártya alatt. Erre kattintva az egérrel,
+kérhetünk Szín- vagy JelzésSúgót. [Az aktuális színhez és jelzéshez esetenként kért szín és/vagy jelzés
+tartozik, erről bővebben lejjebb.]
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A korábban lerakott lapokat is megnézhetjük a kártya melletti gördítősáv segítségével (ez különösen hasznos lehet pl.
+akkor, ha <a href="j_20.html"><img src="../cardimg/smallimg/20.gif" alt="Újrahasznosító" border=0 align="absmiddle"></a> jelzésű lapot tervezünk lerakni).
+A [Kártya súgó] gombbal mindig arról a kártyalapról kérhetünk SzínSúgót és JelzésSúgót, amelyiken éppen állunk.
+<br>
+<h4>Kért szín, jelzés, irány</h4>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+Bizonyos kártyalapok lerakásakor színt, jelzést vagy irányt kell kérni, esetleg kettőt vagy mindhármat egyszerre.
+Ha valaki színt, jelzést vagy irányt kért, az a JátékTér alján jelenik meg. Ha nekünk kell kérnünk valamelyiket, 
+akkor a hozzá tartozó lista kinyithatóvá válik és kiválaszthatunk belőle egy elemet.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A kért színről SzínSúgót, a kért jelzésről
+JelzésSúgót kérhetünk a piktogramjukon történő egérkattintással kinyíló menüből.
+Ha nekünk kell kérnünk, még mielőtt véglegesítenénk a kérést, tetszőleges kérhető
+listaelemet kiválasztva annak piktogramja megjelenik és súgót kérhetünk róla.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A szín- illetve jelzéskérés általában azt jelzi, hogy a következő lerakott lapnak
+ilyennek kell lennie. Az iránykérés általában kártyalapok átadásának irányát jelenti,
+de mindig kérjünk Szín-, s főleg JelzésSúgót az akutális színről/jelzésről, ha nem tudjuk,
+hogy mi célból kell(ett) kérni valamit.
+<br>&nbsp;
+<!-- /CONTENT_SUB -->
+
+
+</td><td width="20%">
+
+<!-- RIGHTSIDE_SUB -->
+&nbsp;
+<!-- /RIGHTSIDE_SUB -->
+
+</td></tr></table>
+
+<!-- --------- CARDSINHAND -------------- -->
+<table border=0><tr><td>
+
+
+<!-- ANCHOR -->
+<a name="cardsinhand">
+<!-- /ANCHOR -->
+
+
+<img src="../docimg/jelsor.gif" border=0></a>
+</td></tr></table>
+
+<table bgcolor="#005700" width="100%" cellspacing=0 cellpadding=0 border=0>
+  <td align="center">
+      &nbsp;
+      <h3>
+
+
+<!-- TITLE_SUB -->
+Saját lapok és akciógombok
+<!-- /TITLE_SUB -->
+
+      
+      </h3>
+  </td>
+  <td width="10%">
+      <a href="#top"><img src="../docimg/top.jpg" alt="Föl" border=0><br>
+      Lap teteje</a>
+  </td>
+ </tr>
+</table>
+
+&nbsp;
+
+<table bgcolor="#B0006F" width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr valign="top" width="5%"><td align="center">
+
+
+<!-- LEFTSIDE_SUB -->
+&nbsp;
+<!-- /LEFTSIDE_SUB -->
+
+
+</td><td>
+
+
+<!-- CONTENT_SUB -->
+&nbsp;
+&nbsp;<img src="../docimg/cardsinhand2.gif">
+<br>
+<h4>A kártyáink</h4>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+Saját, "kézben lévő" kártyáink jelennek meg a Játékasztal alsó részén, középen.
+Egyszerre csak 8 lap látható, a többit a vízszintes gördítősávval érhejük el.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+Egérkattintással választhatunk ki kártyát. A kijelölt lap köré kék-lila szaggatott
+keret kerül, s a lap színének és jelzésének négyzet alakú piktogramra a bal oldalon
+a gombok alatt megjelenik.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A kiválasztott kártyáról SzínSúgót és JelzésSúgót kérhetünk
+a gombok alatti piktogramra kattintva megjelenő menüből. A menüben lévő
+"Mivé válna?" pedig a játék pillanatnyi állapotában megadja, hogy milyen színűnek és
+jelzésűnek számít a kártya (ha ugyanis metaszínű és/vagy jelzésű, akkor hasonul a metaszíntől/-jelzéstől
+függően valamihez, s így kap igazi színt/jelzést ideiglenesen). A hasonult szín és jelzés a piktogram
+helyén jelenik meg, nem metaszínű/metajelzésű kártyáknál természetesen nem történik semmi.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A kártyák rendezgetése nem a megszokott drag&drop elven működik, hanem úgy, hogy
+az áthelyezni kívánt kártyára a jobb egérgombbal rákattintunk (az egérkurzor megváltozik) és
+a kívánt új helyre kattintva 'letesszük' a lapot. A kártya áthelyezése közben használhatjuk
+a gördítősávot is.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+Egy kártyára való dupla kattintás (ha kezeli a böngészőnk) az akciógombok közül
+a felsőre való kattintással egyenértékű (ld. lent).
+<br>
+<h4>Akciógombok</h4>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A játék során a bal alsó sarok feletti két gomb segítségével tevékenykedhetünk. A gombok szövege
+és állapota (megnyomhatósága) mindig változik, igazodik a pillanatnyi helyzetben lehetésges akciókoz.
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+A felső gomb mindig a kijelölt kártyával tesz valamit, az esetek túlnyomó többéségben lerakási kísérletet jelent:
+<ul>
+  <li>[Lerak] - első lap lerakása a körben,</li>
+  <li>[Soroz] - további lap lerakása,</li>
+  <li>[Halmoz] - kötelező húzás áthárítása,</li>
+  <li>[Beszúr] - a staféta magunkhoz ragadása azonos kártya lerakásával,</li>
+  <li>[Vétó!] - más lila lapjának megvétózása,</li>
+</ul>  
+máskor pedig lapkiválasztást:
+<ul>
+  <li>[Választ] - lerakott lap speciális jelentése váltja ki. Ha nem tudjuk, mi fog történni a kiválasztott lappal, kérjünk JelzésSúgót az aktuális jelzésről.</li>
+</ul>  
+
+<br>
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+Az alsó gomb nem érinti a kijelölt kártyát, s csak akkor használható, ha mi vagyunk soron. Általában passzolást vagy ahhoz hasonlót
+vált ki (minden esetben azt a szándékot fejezzük ki vele, hogy jelenlegi tevékenységünket befejezve át akarjuk adni a stafétát a következő játékosnak):
+<ul>
+  <li>[Passz] - lerakás helyett húzás (vagy kimaradás / kötelező húzás végrehajtása),</li>
+  <li>[Befejez] - kártyalerakás befejezése,</li>
+  <li>[Kezd] - kezdőlaphúzás,</li>
+  <li>[Semmit] - kártyalapválasztás helyett,</li>
+  <li>[Kér] - a kiválasztott kérés jóváhagyása.</li>
+</ul>
+
+<img src="../docimg/bulletarrow.gif" align="bottom" alt="*">
+Ha a játék során nem tudjuk, hogy mi történne egy ackiógomb megnyomásának következtében,
+kérjünk JétékSúgót a Kártyaasztal [Játék súgó] gombjával.
+
+<br>&nbsp;
+<!-- /CONTENT_SUB -->
+
+
+</td><td width="20%">
+
+<!-- RIGHTSIDE_SUB -->
+&nbsp;<br>
+&nbsp;<img src="../docimg/cardsinhand.gif">
+&nbsp;<br>
+&nbsp;
+<!-- /RIGHTSIDE_SUB -->
+
+</td></tr></table>
+
+<!-- --------- END -------------- -->
+
+<table border=0><tr><td>
+<img src="../docimg/jelsor.gif" border=0>
+</td></tr></table>
+
+
+<table width="100%" bgcolor="#005700" cellspacing=0 cellpadding=0 border=0>
+<tr VAlign="bottom" align="center">
+<td width="33%">
+
+
+<!-- FOOTER -->
+&nbsp;<table bgcolor="#23DC31" width="60%"><tr><td align="center">
+<a href="ps_index.html"><img src="../docimg/back.jpg" alt="Vissza" border=0><br>
+<font color="#FFFFFF">JátékSúgó</font></a>
+</tr></td></table>&nbsp;
+<!-- /FOOTER -->
+
+
+</td>
+<td width="33%">
+&nbsp;<table><tr><td align="center">
+<a href="../index.html"><img src="../docimg/szr.gif" border=0 alt="Szélrózsa" height=64><br>
+Turistakártya</a>
+</tr></td></table>&nbsp;
+</td>
+
+<td width="33%">
+&nbsp;<table><tr><td align="center">
+<a href="#top"><img src="../docimg/top.jpg" alt="Föl" border=0><br>
+Lap teteje</a>
+</tr></td></table>&nbsp;
+</td>
+</tr>
+</table>
+
+<p align=right><a href="mailto:mola@inf.elte.hu"><img src="../docimg/ma2002.gif" alt="Moln&aacute;r Andr&aacute;s, 2002." border=0></a></p>
+
+</body>
+</html>

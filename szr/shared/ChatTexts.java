@@ -1,0 +1,52 @@
+package szr.shared;
+
+public class ChatTexts extends java.util.ListResourceBundle {
+	static final Object[][] contents = {
+		{"[...]", "[...]"}, 
+		{"%p__csatlakozott_a_játékho", "%p  csatlakozott a játékhoz."}, 
+		{"%p_hálózati_kapcsolata_saj", "%p hálózati kapcsolata sajnos megszakadt."}, 
+		{"%p_kiszállt_a_játékból.", "%p kiszállt a játékból."}, 
+		{"%p_megnyerte_a_játékot!", "%p megnyerte a játékot!"}, 
+		{"%p_vétózott!", "%p vétózott!"}, 
+		{"%p_beszúrt!", "%p beszúrt!"}, 
+		{"%p_kihúzta_a_kezdõlapot.", "%p kihúzta a kezdõlapot."}, 
+		{"%p1_és_%p2_kicserélték_lap", "%p1 és %p2 kicserélték lapjaikat."}, 
+		{"%p_eldob_egy_lapot_a_pakli", "%p eldob egy lapot a pakli tetejére."}, 
+		{"%p_megkeverte_a_játékosok_", "%p megkeverte a játékosok lapjait (és a jelzéslapot)."}, 
+		{"%p_kiosztotta_lapjait_és_k", "%p kiosztotta lapjait és kapott helyettük újakat."}, 
+		{"%p_újrahasznosított.", "%p újrahasznosított."}, 
+		{"(Mivel_még_nem_volt_elég_l", "(Mivel még nem volt elég lerakott lap, a pakliból egészítette ki kártyáit.)"}, 
+		{"%p1_továbbadta_a_lapjait_%", "%p1 továbbadta a lapjait %p2 felé."}, 
+		{"%p_kicserélheti_a_jelzésla", "%p kicserélheti a jelzéslapot."}, 
+		{"JoinMessage1", "Játék: %g"}, 
+		{"JoinMessage2", "~~~~~~~~~~~~~~~~"}, 
+		{"Nincs_több_lerakott_lap.", "Nincs több lerakott lap."}, 
+		{"Új_jelzéslap__%cj.", "Új jelzéslap: %cj."}, 
+		{"Új_játékirány__%d.", "Új játékirány: %d."}, 
+		{"Mivel_%p1_ideje_lejárt,_ni", "Mivel %p1 ideje lejárt, nincs kért szín. Bármilyen kérhetõt lehet rakni."}, 
+		{"Mivel_%p1_ideje_lejárt,_ni1", "Mivel %p1 ideje lejárt, nincs kért jelzés. Bármilyen kérhetõt lehet rakni."}, 
+		{"Mivel_%p1_ideje_lejárt,_a_", "Mivel %p1 ideje lejárt, a játék iránya számít kért iránynak."}, 
+		{"Mivel_%p1_ideje_lejárt,_au", "Mivel %p1 ideje lejárt, automatikusan történt a lapkiválasztás."}, 
+		{"Mivel_%p1_ideje_lejárt,_má", "Mivel %p1 ideje lejárt, már nem választhat lapot."}, 
+		{"Mivel_%p1_ideje_lejárt,_au1", "Mivel %p1 ideje lejárt, automatikusan passzol."}, 
+		{"Mivel_%p1_kiszállt,_%p2_ké", "Mivel %p1 kiszállt, %p2 kérhet."}, 
+		{"Mivel_%p1_kiszállt,_%p2_kö", "Mivel %p1 kiszállt, %p2 következik."}, 
+		{"%p_lapjai_elfogytak!", "%p lapjai elfogytak!"}, 
+		{"%p_lapjai_egy_híján_elfogy", "%p lapjai egy híján elfogytak!"}, 
+		{"%p_hatástalanította_a_köte", "%p hatástalanította a kötelezõ húzást [%ut]."}, 
+		{"%p1_már_semmit_sem_tud_áta", "%p1 már semmit sem tud átadni %p2 kezébe."}, 
+		{"%p1_átad_egy_lapot_%p2_kez", "%p1 átad egy lapot %p2 kezébe."}, 
+		{"%p1_már_semmit_sem_tud_eld", "%p1 már semmit sem tud eldobni a pakli tetejére."}, 
+		{"%p1_eldob_egy_lapot_a_pakl", "%p1 eldob egy lapot a pakli tetejére."}, 
+		{"%p2_húzott_%c_lapot_%p1_ke", "%p2 húzott %c lapot %p1 kezébõl."}, 
+		{"%p1_kezébõl_már_nem_lehet_", "%p1 kezébõl már nem lehet húzni, így %p2 a pakliból egészíti ki lapjait."}, 
+		{"%p2_húzott_%c_lapot_a_pakl", "%p2 húzott %c lapot a pakliból."}, 
+		{"%p2_kimaradt_a_körbõl.", "%p2 kimaradt a körbõl."}, 
+		{"PlayerChatMsg", "%smiley %pname: %msg"}, 
+		{"Elfogytak_a_pakliból_a_lap", "Elfogytak a pakliból a lapok, hozzávettünk egy új kártyacsomagot."}, 
+		{"%p_%l.szintû_COMBO-t_rakot", "%p %l.szintû COMBO-t rakott ki, kártyái új színt kapnak: %c."}, 
+	};
+protected Object[][] getContents() {
+	return contents;
+}
+}
